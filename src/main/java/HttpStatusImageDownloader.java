@@ -25,8 +25,11 @@ public class HttpStatusImageDownloader {
         try (InputStream inputStream = new URL(fileUrl).openStream()) {
             if (!Files.exists(path)) {
                 Files.copy(inputStream, path);
+<<<<<<< HEAD
             } else {
                 System.out.println("File with code " + code + " already exist!");
+=======
+>>>>>>> 300035b (Initial commit)
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
